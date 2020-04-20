@@ -3,8 +3,6 @@ $semi-circle: 175px;
 .ring-container {
     display: flex;
     flex-direction: row;
-    width: 140px;
-    height: 140px;
 }
 
 .section {
@@ -17,9 +15,6 @@ $semi-circle: 175px;
 
 .semi-ring-container-right {
   position: relative;
-  width: 70px;
-  height: 140px;
-  box-sizing: border-box;
   overflow: hidden;
 
   .section {
@@ -34,9 +29,6 @@ $semi-circle: 175px;
 
 .semi-ring-container-left {
     position: relative;
-    width: 70px;
-    height: 140px;
-    box-sizing: border-box;
     overflow: hidden;
 
     .section {

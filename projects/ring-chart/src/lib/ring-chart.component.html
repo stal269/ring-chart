@@ -1,5 +1,9 @@
-<div class="ring-container">
-  <div class="semi-ring-container-left">
+<div class="ring-container"
+     [style.width.px]="diameter"
+     [style.height.px]="diameter">
+  <div class="semi-ring-container-left"
+       [style.width.px]="diameter / 2"
+       [style.height.px]="diameter">
       <div
           class="section"
           *ngFor="let item of leftSemiRingSections$$"
@@ -8,7 +12,9 @@
           [style.z-index]="item.index">
       </div>
   </div>
-  <div class="semi-ring-container-right">
+  <div class="semi-ring-container-right"
+       [style.width.px]="diameter / 2"
+       [style.height.px]="diameter">
       <div
           class="section"
           *ngFor="let item of rightSemiRingSections$$"

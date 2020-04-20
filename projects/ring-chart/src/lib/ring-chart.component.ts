@@ -12,6 +12,8 @@ export class RingChartComponent implements OnChanges {
   private static readonly INITIAL_OFFSET_DEGREES_SEMI = 180;
 
   @Input() sections: RingSectionItem[] = [];
+  @Input() diameter: number;
+  @Input() thickness: number;
 
   leftSemiRingSections$$: RingSemiSectionItem[] = [];
   rightSemiRingSections$$: RingSemiSectionItem[] = [];
