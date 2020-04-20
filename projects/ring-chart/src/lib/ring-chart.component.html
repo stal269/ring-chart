@@ -1,0 +1,20 @@
+<div class="ring-container">
+  <div class="semi-ring-container-left">
+      <div
+          class="section"
+          *ngFor="let item of leftSemiRingSections$$"
+          [style.border-color]="item.color"
+          [style.transform]="'rotate(' + item.rotation + 'deg)'"
+          [style.z-index]="item.index">
+      </div>
+  </div>
+  <div class="semi-ring-container-right">
+      <div
+          class="section"
+          *ngFor="let item of rightSemiRingSections$$"
+          [style.border-color]="item.color"
+          [style.transform]="'rotate(' + item.rotation + 'deg)'"
+          [style.z-index]="item.index">
+      </div>
+  </div>
+</div>

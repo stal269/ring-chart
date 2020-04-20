@@ -1,3 +1,4 @@
+import { RingSectionItem } from './../../../ring-chart/src/lib/ring-chart.model';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'demo';
+  sections: RingSectionItem[] = [
+    {
+      percentage: 0.5,
+      color: '#FF0000'
+    },
+    {
+      percentage: 0.5,
+      color: '#800000'
+    }
+  ];
 }
