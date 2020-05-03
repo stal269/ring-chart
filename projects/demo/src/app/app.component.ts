@@ -20,9 +20,8 @@ export class AppComponent {
       percentage: 0.2,
       color: 'blue'
     }
-
   ];
 
   thickness = 15;
-  diameter = 300;
+  diameter = 400;
 }

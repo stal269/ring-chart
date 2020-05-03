@@ -1,5 +1,3 @@
-$semi-circle: 175px;
-
 .ring-container {
     display: flex;
     flex-direction: row;
@@ -13,6 +11,18 @@ $semi-circle: 175px;
   box-sizing: border-box;
 }
 
+.semi-ring-container-left {
+  position: relative;
+  overflow: hidden;
+
+  .section {
+    top: 0;
+    left: 100%;
+    border-left: none;
+    transform-origin: 0 50%;
+  }
+}
+
 .semi-ring-container-right {
   position: relative;
   overflow: hidden;
@@ -21,22 +31,6 @@ $semi-circle: 175px;
     top: 0;
     right: 100%;
     border-right: none;
-    border-bottom-left-radius: $semi-circle;
-    border-top-left-radius: $semi-circle;
     transform-origin: 100%;
   }
-}
-
-.semi-ring-container-left {
-    position: relative;
-    overflow: hidden;
-
-    .section {
-      top: 0;
-      left: 100%;
-      border-left: none;
-      border-bottom-right-radius: $semi-circle;
-      border-top-right-radius: $semi-circle;
-      transform-origin: 0 50%;
-    }
 }
