@@ -22,6 +22,6 @@ export class AppComponent {
     }
   ];
 
-  thickness = 15;
-  diameter = 400;
+  thickness = 30;
+  diameter = 600;
 }

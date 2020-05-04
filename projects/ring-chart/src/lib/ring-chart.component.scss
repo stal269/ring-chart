@@ -1,36 +1,31 @@
 .ring-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .section {
   position: absolute;
   width: inherit;
   height: inherit;
-  border: 11px solid;
+  border-style: solid;
   box-sizing: border-box;
 }
 
-.semi-ring-container-left {
+.semi-ring-container {
   position: relative;
   overflow: hidden;
-
-  .section {
-    top: 0;
-    left: 100%;
-    border-left: none;
-    transform-origin: 0 50%;
-  }
 }
 
-.semi-ring-container-right {
-  position: relative;
-  overflow: hidden;
+.semi-ring-container-left .section {
+  top: 0;
+  left: 100%;
+  border-left: none;
+  transform-origin: 0 50%;
+}
 
-  .section {
-    top: 0;
-    right: 100%;
-    border-right: none;
-    transform-origin: 100%;
-  }
+.semi-ring-container-right .section {
+  top: 0;
+  right: 100%;
+  border-right: none;
+  transform-origin: 100%;
 }

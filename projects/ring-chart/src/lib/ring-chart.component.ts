@@ -23,6 +23,7 @@ export class RingChartComponent implements OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
     if (!changes.firstChange) {
       this.calculateSections();
+      this.validateThickness();
     }
   }
 
@@ -66,6 +67,11 @@ export class RingChartComponent implements OnChanges {
   private getSemiRotation(percentage: number): number {
     return (RingChartComponent.INITIAL_OFFSET_DEGREES_SEMI + (percentage * RingChartComponent.NUM_OF_DEGREES_RING)) %
       RingChartComponent.NUM_OF_DEGREES_RING;
+  }
+
+  private validateThickness(): void {
+    const halfDiameter = this.diameter / 2;
+    this.thickness = this.thickness > halfDiameter ? halfDiameter : this.thickness;
   }
 
 }

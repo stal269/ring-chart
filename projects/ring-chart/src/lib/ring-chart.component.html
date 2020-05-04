@@ -1,7 +1,7 @@
 <div class="ring-container"
      [style.width.px]="diameter"
      [style.height.px]="diameter">
-  <div class="semi-ring-container-left"
+  <div class="semi-ring-container semi-ring-container-left"
        [style.width.px]="diameter / 2"
        [style.height.px]="diameter">
       <div
@@ -10,11 +10,12 @@
           [style.border-color]="item.color"
           [style.border-top-right-radius.px]="diameter"
           [style.border-bottom-right-radius.px]="diameter"
+          [style.border-width.px]="thickness"
           [style.transform]="'rotate(' + item.rotation + 'deg)'"
           [style.z-index]="item.index">
       </div>
   </div>
-  <div class="semi-ring-container-right"
+  <div class="semi-ring-container semi-ring-container-right"
        [style.width.px]="diameter / 2"
        [style.height.px]="diameter">
       <div
@@ -23,6 +24,7 @@
           [style.border-color]="item.color"
           [style.border-top-left-radius.px]="diameter"
           [style.border-bottom-left-radius.px]="diameter"
+          [style.border-width.px]="thickness"
           [style.transform]="'rotate(' + item.rotation + 'deg)'"
           [style.z-index]="item.index">
       </div>
