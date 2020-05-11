@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { RingChartComponent } from './ring-chart.component';
 
 describe('RingChartComponent', () => {

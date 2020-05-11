@@ -9,3 +9,8 @@ export interface RingSemiSectionItem {
     rotation: number;
     color: string;
 }
+
+export interface RingSectionsPartition {
+  leftSections: RingSemiSectionItem[];
+  rightSections: RingSemiSectionItem[];
+}
