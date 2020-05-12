@@ -9,7 +9,7 @@ import { RingChartService } from './ring-chart.service';
 })
 export class RingChartComponent implements OnChanges {
 
-  @Input() sections: RingSectionItem[] = [];
+  @Input() sections: Array<RingSectionItem> = [];
   @Input() diameter: number;
   @Input() thickness: number;
 
@@ -20,8 +20,9 @@ export class RingChartComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (!changes.firstChange) {
-      this.calculateSections();
       this.validateThickness();
+      this.validateSections();
+      this.calculateSections();
     }
   }
 
@@ -45,6 +46,36 @@ export class RingChartComponent implements OnChanges {
   private validateThickness(): void {
     const halfDiameter = this.diameter / 2;
     this.thickness = this.thickness > halfDiameter ? halfDiameter : this.thickness;
+  }
+
+  private validateSections(): void {
+    if (!(this.sections instanceof Array)) {
+      throw new Error('sections must be of type array');
+    }
+
+    let sum = 0;
+
+    this.sections.forEach((section: RingSectionItem) => {
+      if (isNaN(section.percentage) || section.percentage > 1) {
+        throw new Error('section percentage must be a number and not bigger than 1');
+      }
+
+      sum += section.percentage;
+    });
+
+    if (sum > 1) {
+      throw new Error('sections percentage sum must be equal to 1');
+    }
+
+    if (sum < 1) {
+      this.sections = [
+        ...this.sections,
+        {
+          color: 'inherit',
+          percentage: 1 - sum
+        }
+      ];
+    }
   }
 
 }

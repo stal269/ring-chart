@@ -9,15 +9,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   sections: RingSectionItem[] = [
     {
-      percentage: 0.4,
+      percentage: 0.15,
       color: 'red'
     },
     {
-      percentage: 0.4,
-      color: 'lightgreen'
+      percentage: 0.45,
+      color: 'green'
     },
     {
-      percentage: 0.2,
+      percentage: 0.4,
       color: 'blue'
     }
   ];
