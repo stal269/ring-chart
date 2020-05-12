@@ -25,6 +25,17 @@ export class RingChartComponent implements OnChanges {
     }
   }
 
+  getStyles$$(section: RingSemiSectionItem, borderSide: string) {
+    return {
+      'border-color': section.color,
+      [`border-top-${borderSide}-radius.px`]: this.diameter,
+      [`border-bottom-${borderSide}-radius.px`]: this.diameter,
+      'border-width.px': this.thickness,
+      'z-index': section.index,
+      transform: `rotate(${section.rotation}deg)`
+    };
+  }
+
   private calculateSections(): void {
     const partition: RingSectionsPartition = this.ringChartSrv.getRingSectionsPartition(this.sections);
     this.leftSections$$ = partition.leftSections;
