@@ -20,7 +20,7 @@ export class RingChartService {
     sections.forEach((section, index) => {
       if (rightSemiRingTotalPercents < 0.5) {
         if (rightSemiRingTotalPercents + section.percentage > 0.5) {
-          const leftSemiPercentRemainder = rightSemiRingTotalPercents + section.percentage - 0.5;
+          const leftSemiPercentRemainder = this.getLeftRemainder(rightSemiRingTotalPercents, section.percentage);
 
           leftSections.push({
             index,
@@ -81,6 +81,10 @@ export class RingChartService {
   private getSemiRotation(percentage: number): number {
     return (RingChartService.INITIAL_OFFSET_DEGREES_SEMI + (percentage * RingChartService.NUM_OF_DEGREES_RING)) %
     RingChartService.NUM_OF_DEGREES_RING;
+  }
+
+  private getLeftRemainder(rightTotalPercents: number, sectionPercentage: number): number {
+    return parseFloat((rightTotalPercents + sectionPercentage - 0.5).toFixed(5));
   }
 
 }
