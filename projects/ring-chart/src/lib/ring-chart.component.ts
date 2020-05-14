@@ -12,6 +12,11 @@ export class RingChartComponent implements OnChanges {
   @Input() sections: Array<RingSectionItem> = [];
   @Input() diameter: number;
   @Input() thickness: number;
+  @Input() centerColor: string;
+
+  centerSize$$: number;
+  centerColor$$: string;
+  centerZindex$$: number;
 
   leftSections$$: RingSemiSectionItem[] = [];
   rightSections$$: RingSemiSectionItem[] = [];
@@ -23,6 +28,7 @@ export class RingChartComponent implements OnChanges {
       this.validateAndUpdateThickness();
       this.validateSections();
       this.calculateSections();
+      this.calculateCenter();
     }
   }
 
@@ -49,6 +55,14 @@ export class RingChartComponent implements OnChanges {
 
   private validateSections(): void {
     this.ringChartSrv.validateSections(this.sections);
+  }
+
+  private calculateCenter(): void {
+    if (this.centerColor) {
+      this.centerColor$$ = this.centerColor ? this.centerColor : this.centerColor$$;
+      this.centerSize$$ = this.diameter - 2 * this.thickness;
+      this.centerZindex$$ = this.sections.length;
+    }
   }
 
 }

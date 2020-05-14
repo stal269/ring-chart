@@ -16,4 +16,8 @@
           [ngStyle]="getStyles$$(section, 'left')">
       </div>
   </div>
+  <div class="ring-center"
+       [ngStyle]="{'width.px': centerSize$$, 'height.px': centerSize$$, 'background': centerColor$$, 'z-index': centerZindex$$}"
+       *ngIf="centerSize$$">
+  </div>
 </div>
