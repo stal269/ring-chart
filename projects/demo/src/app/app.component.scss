@@ -5,6 +5,20 @@
   height: inherit;
 }
 
+@media only screen and (max-width: 850px) {
+  .container {
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 20vh 60vh 20vh 60vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 100vw;
+    grid-template-rows: 20vh 30vh 40vh 50vh 20vh 30vh 40vh 50vh;
+  }
+}
+
 .ring-container {
   position: relative;
 }
