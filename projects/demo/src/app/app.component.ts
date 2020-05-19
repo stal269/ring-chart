@@ -8,21 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  centerColor = '#FFFFFF';
+  centerColor = '#18191a';
 
   ring1$$ = {
     sections: [
       {
-        percentage: 0.8,
-        color: 'red'
-      },
-      {
-        percentage: 0.1,
-        color: 'green'
-      },
-      {
-        percentage: 0.1,
-        color: 'blue'
+        percentage: 1,
+        color: '#4894e0'
       }
     ],
     thickness: 8,
@@ -32,16 +24,12 @@ export class AppComponent {
   ring2$$ = {
     sections: [
       {
-        percentage: 0.8,
-        color: 'red'
+        percentage: 0.7,
+        color: '#53d463'
       },
       {
-        percentage: 0.1,
-        color: 'green'
-      },
-      {
-        percentage: 0.1,
-        color: 'blue'
+        percentage: 0.3,
+        color: '#323971'
       }
     ],
     thickness: 15,
@@ -51,16 +39,16 @@ export class AppComponent {
   ring3$$ = {
     sections: [
       {
-        percentage: 0.8,
-        color: 'red'
+        percentage: 0.25,
+        color: '#92983c'
       },
       {
-        percentage: 0.1,
-        color: 'green'
+        percentage: 0.45,
+        color: '#5cb750'
       },
       {
-        percentage: 0.1,
-        color: 'blue'
+        percentage: 0.3,
+        color: '#c16b42'
       }
     ],
     thickness: 30,
@@ -70,16 +58,20 @@ export class AppComponent {
   ring4$$ = {
     sections: [
       {
-        percentage: 0.8,
-        color: 'red'
+        percentage: 0.1,
+        color: '#c508dc'
       },
       {
-        percentage: 0.1,
-        color: 'green'
+        percentage: 0.2,
+        color: '#a7c9c0'
       },
       {
-        percentage: 0.1,
-        color: 'blue'
+        percentage: 0.3,
+        color: '#05ec17'
+      },
+      {
+        percentage: 0.4,
+        color: '#c8ea5e'
       }
     ],
     thickness: 12,
@@ -89,16 +81,8 @@ export class AppComponent {
   ring5$$ = {
     sections: [
       {
-        percentage: 0.8,
-        color: 'red'
-      },
-      {
-        percentage: 0.1,
-        color: 'green'
-      },
-      {
-        percentage: 0.1,
-        color: 'blue'
+        percentage: 1,
+        color: '#4894e0'
       }
     ],
     thickness: 25,
@@ -108,16 +92,12 @@ export class AppComponent {
   ring6$$ = {
     sections: [
       {
-        percentage: 0.8,
-        color: 'red'
+        percentage: 0.7,
+        color: '#53d463'
       },
       {
-        percentage: 0.1,
-        color: 'green'
-      },
-      {
-        percentage: 0.1,
-        color: 'blue'
+        percentage: 0.3,
+        color: '#323971'
       }
     ],
     thickness: 50,
@@ -127,16 +107,16 @@ export class AppComponent {
   ring7$$ = {
     sections: [
       {
-        percentage: 0.8,
-        color: 'red'
+        percentage: 0.25,
+        color: '#92983c'
       },
       {
-        percentage: 0.1,
-        color: 'green'
+        percentage: 0.45,
+        color: '#5cb750'
       },
       {
-        percentage: 0.1,
-        color: 'blue'
+        percentage: 0.3,
+        color: '#c16b42'
       }
     ],
     thickness: 100,
@@ -146,16 +126,20 @@ export class AppComponent {
   ring8$$ = {
     sections: [
       {
-        percentage: 0.8,
-        color: 'red'
+        percentage: 0.1,
+        color: '#c508dc'
       },
       {
-        percentage: 0.1,
-        color: 'green'
+        percentage: 0.2,
+        color: '#a7c9c0'
       },
       {
-        percentage: 0.1,
-        color: 'blue'
+        percentage: 0.3,
+        color: '#05ec17'
+      },
+      {
+        percentage: 0.4,
+        color: '#c8ea5e'
       }
     ],
     thickness: 150,
