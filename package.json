@@ -3,7 +3,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build ring-chart --prod",
+    "build": "ng build ring-chart --prod && cp README.md ./dist/ring-chart/ ",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
