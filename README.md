@@ -1,8 +1,15 @@
-# RingChart
+# Ring Chart
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
+Simple Ring-Chart/Pie-Chart angular component with 1 or more sections (see [demo](https://shimital.github.io/ring-chart/))
 
-## Development server
+## Getting started
+
+### Install 
+#### NPM
+`npm install --save st-ring-chart`
+
+
+## Development
 
 Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
