@@ -26,7 +26,7 @@ export class AppModule {}
 
 | Input  | Type | Default | Required | Description |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| [sections] | `RingSectionItem[]` | `[]` | Yes | represents the chart sections, every section is in the form of: ``` {"color": string, "percentage": number}``` |
+| [sections] | `RingSectionItem[]` | `[]` | Yes | represents the chart sections, every section is in the form of: ``` {"color": string, "percentage": number}```. Sum of section percentages must be equal to 1 |
 | [thickness] | `number` (px) | 5 | No | The width of the ring. When this number is half or greater the ring diameter it fills the ring entirely and it becomes a pie. |
 | [diameter] | `number` (px) | 0 | Yes | The Ring/Pie diameter. |
 | [centerColor] | `string` | background | No | The color of the ring center. It is recommended to pass this parameter in order to avoid some display artifacts where the sections intersect |
