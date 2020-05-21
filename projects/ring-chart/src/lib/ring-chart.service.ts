@@ -72,7 +72,7 @@ export class RingChartService {
     }
   }
 
-  getThickness(thickness: number, diameter: number): number {
+  getThickness(thickness: number = 5, diameter: number): number {
     const halfDiameter = diameter / 2;
 
     return thickness > halfDiameter ? halfDiameter : thickness;

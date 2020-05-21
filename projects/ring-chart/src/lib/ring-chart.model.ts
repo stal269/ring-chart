@@ -1,7 +1,6 @@
 export interface RingSectionItem {
-    [key: string]: any;
     percentage: number;
-    color?: string;
+    color: string;
 }
 
 export interface RingSemiSectionItem {
