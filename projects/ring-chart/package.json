@@ -1,6 +1,14 @@
 {
   "name": "st-ring-chart",
+  "repository": "shimital/ring-chart",
   "version": "1.0.1",
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "angular9",
+    "ring-chart",
+    "pie-chart"
+  ],
   "peerDependencies": {
     "@angular/common": "^9.0.7",
     "@angular/core": "^9.0.7",
