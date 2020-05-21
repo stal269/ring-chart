@@ -8,6 +8,17 @@ Simple Ring-Chart/Pie-Chart angular component with 1 or more sections (see [demo
 #### NPM
 `npm install --save st-ring-chart`
 
+### Import The Ring Chart module
+```js
+import { RingChartModule } from 'st-ring-chart';
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [RingChartModule],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
 
 ## Development
 
