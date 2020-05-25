@@ -1,3 +1,4 @@
+[![npm version](https://badge.fury.io/js/st-ring-chart.svg)](https://badge.fury.io/js/st-ring-chart)
 # Ring Chart
 
 Simple Ring-Chart/Pie-Chart angular component with 1 or more sections (see [demo](https://shimital.github.io/ring-chart/))
