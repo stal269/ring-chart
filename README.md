@@ -2,6 +2,8 @@
 
 Simple Ring-Chart/Pie-Chart angular component with 1 or more sections (see [demo](https://shimital.github.io/ring-chart/))
 
+<img src="assets/ring.png" width="150" height="150"/>
+
 ## Getting started
 
 ### Install 
